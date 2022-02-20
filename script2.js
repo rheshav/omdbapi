@@ -6,7 +6,7 @@ searchButton.addEventListener('click', async function () {
     const movies = await getMovies(inputKeyword.value);
     updateUI(movies);
   } catch (error) {
-    console.log(error);
+    alert(error);
   }
 });
 
